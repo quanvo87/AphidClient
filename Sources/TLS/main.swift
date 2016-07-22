@@ -32,7 +32,7 @@ try client.connect()
 // ....
 try client.publish(topic: "city/austin/temperature", withMessage: "90 degrees")
 
-try client.subscribe(topic: ["city/#/temperature", "lastWill/"], qoss: [.atMostOnce,.atLeastOnce])
+try client.subscribe(topic: ["city/#", "status/lastWill"], qoss: [.atMostOnce,.atLeastOnce])
 
 while config.status == ConnectionStatus.connected {
     sleep(60)

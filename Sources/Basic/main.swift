@@ -24,11 +24,11 @@ let client = Client(clientId: clientId)
 
 try client.connect()
 
-try client.subscribe(topic: ["city/#/temperature", "lastWill/", "city/Austin/weather"], qoss: [.atMostOnce, .atLeastOnce, .exactlyOnce])
+try client.subscribe(topic: ["city/+/temperature", "status/lastWill", "universe/+/+/planet"], qoss: [.atMostOnce, .atLeastOnce, .exactlyOnce])
 
 try client.ping()
 
-try client.unsubscribe(topics: ["city/"])
+try client.unsubscribe(topics: ["city/+/temperature", "universe/+/+/planet"])
 
 try client.publish(topic: "city/austin/temperature", withMessage: "90 degrees")
 
