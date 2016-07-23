@@ -11,7 +11,7 @@
 
 1. Instructions for install swift snapshots and previews can be found [here](https://swift.org/download/)
 
-  Install the Dispatch library on your toolchain with:
+  On Linux, you must install the Dispatch library on your toolchain with:
   
   ```
    export SWIFT_HOME=$PWD/swift-toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-06-20-a-ubuntu15.10/
