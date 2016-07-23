@@ -11,11 +11,19 @@
 
 1. Instructions for install swift snapshots and previews can be found [here](https://swift.org/download/)
 
+  Install the Dispatch library on your toolchain with:
+  
+  ```
+   export SWIFT_HOME=$PWD/swift-toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-06-20-a-ubuntu15.10/
+   
+   git clone --recursive -b experimental/foundation https://github.com/apple/swift-corelibs-libdispatch.git && cd swift-corelibs-libdispatch && sh ./autogen.sh && ./configure --with-swift-toolchain=$SWIFT_HOME/usr --prefix=$SWIFT_HOME/usr && make && make install
+   ```
+
 2. Install openssl:
 
     macOS: `brew install openssl`
 
-    linux: `sudo apt-get openssl`
+    linux: `sudo apt-get install openssl libssl-dev`
 
 3. Install the MQTT broker:
 
