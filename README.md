@@ -1,5 +1,5 @@
 ![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)
-[![Swift 3 6-20](https://img.shields.io/badge/Swift%203-6/20 SNAPSHOT-blue.svg)](https://swift.org/download/#snapshots)
+[![Swift 3 8-07](https://img.shields.io/badge/Swift%203-8/07 SNAPSHOT-blue.svg)](https://swift.org/download/#snapshots)
 
 # Aphid Client Examples
 
