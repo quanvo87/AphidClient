@@ -26,7 +26,7 @@ config.host = "mbu1j9.messaging.internetofthings.ibmcloud.com"
 
 try client.connect()
 
-try client.subscribe(topic: ["iot-2/cmd/waterPump/fmt/json"], qoss: [.atMostOnce])
+client.subscribe(topic: ["iot-2/cmd/waterPump/fmt/json"], qoss: [.atMostOnce])
 
 while config.status == ConnectionStatus.connected {
 
@@ -34,7 +34,7 @@ while config.status == ConnectionStatus.connected {
 
 	print("Publishing Humidity Level: \(level)")
 
-	try client.publish(topic: "iot-2/evt/water/fmt/json", withMessage: "{\"water\": \(level)}")
+	client.publish(topic: "iot-2/evt/water/fmt/json", withMessage: "{\"water\": \(level)}")
 
     sleep(10)
 }

@@ -30,9 +30,9 @@ try client.setSSL(certPath: myCertPath, keyPath: myKeyPath)
 try client.connect()
 
 // ....
-try client.publish(topic: "city/austin/temperature", withMessage: "90 degrees")
+client.publish(topic: "city/austin/temperature", withMessage: "90 degrees")
 
-try client.subscribe(topic: ["city/#", "status/lastWill"], qoss: [.atMostOnce,.atLeastOnce])
+client.subscribe(topic: ["city/#", "status/lastWill"], qoss: [.atMostOnce,.atLeastOnce])
 
 while config.status == ConnectionStatus.connected {
     sleep(60)
