@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/IBM-Swift/AphidClient.svg?branch=master)](https://travis-ci.org/IBM-Swift/AphidClient)
 ![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)
-[![Swift 3 8-15](https://img.shields.io/badge/Swift%203-8-15 SNAPSHOT-blue.svg)](https://swift.org/download/#snapshots)
+[![Swift 3 8-15](https://img.shields.io/badge/Swift%203-8/15 SNAPSHOT-blue.svg)](https://swift.org/download/#snapshots)
 
 # Aphid Client Examples
 
