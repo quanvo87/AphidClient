@@ -30,7 +30,7 @@ client.subscribe(topic: ["iot-2/cmd/waterPump/fmt/json"], qoss: [.atMostOnce])
 
 while config.status == ConnectionStatus.connected {
 
-	let level = arc4random_uniform(75) + 25
+	let level = 25
 
 	print("Publishing Humidity Level: \(level)")
 
