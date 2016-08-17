@@ -1,5 +1,6 @@
+[![Build Status](https://travis-ci.org/IBM-Swift/AphidClient.svg?branch=master)](https://travis-ci.org/IBM-Swift/AphidClient)
 ![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)
-[![Swift 3 8-07](https://img.shields.io/badge/Swift%203-8/07 SNAPSHOT-blue.svg)](https://swift.org/download/#snapshots)
+[![Swift 3 8-15](https://img.shields.io/badge/Swift%203-8/15 SNAPSHOT-blue.svg)](https://swift.org/download/#snapshots)
 
 # Aphid Client Examples
 
@@ -7,7 +8,7 @@
 
 ## Setup:
 
-> Requires `swift-DEVELOPMENT-SNAPSHOT-2016-06-20-a toolchain` (Minimum REQUIRED for latest release)
+> Requires `swift-DEVELOPMENT-SNAPSHOT-2016-08-15-a toolchain` (Minimum REQUIRED for latest release) OR XCode 8 beta 6
 
 1. Instructions for install swift snapshots and previews can be found [here](https://swift.org/download/)
 

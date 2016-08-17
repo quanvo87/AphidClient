@@ -24,15 +24,15 @@ let client = Client(clientId: clientId)
 
 try client.connect()
 
-try client.subscribe(topic: ["city/+/temperature", "status/lastWill", "universe/+/+/planet"], qoss: [.atMostOnce, .atLeastOnce, .exactlyOnce])
+client.subscribe(topic: ["city/+/temperature", "status/lastWill", "universe/+/+/planet"], qoss: [.atMostOnce, .atLeastOnce, .exactlyOnce])
 
 try client.ping()
 
-try client.unsubscribe(topics: ["city/+/temperature", "universe/+/+/planet"])
+client.unsubscribe(topics: ["city/+/temperature", "universe/+/+/planet"])
 
-try client.publish(topic: "city/austin/temperature", withMessage: "90 degrees")
+client.publish(topic: "city/austin/temperature", withMessage: "90 degrees")
 
-try client.disconnect()
+client.disconnect()
 
 while config.status == ConnectionStatus.connected {
     sleep(60)

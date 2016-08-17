@@ -28,7 +28,7 @@ client.setWill(topic: "status/lastWill", message: "Client: \(clientId) Closed Un
 try client.connect()
 
 // Subscribe to other's wills
-try client.subscribe(topic: ["status/lastWill", "city/#", "universe/+/+/planet"], qoss: [.atLeastOnce, .atMostOnce, .exactlyOnce])
+client.subscribe(topic: ["status/lastWill", "city/#", "universe/+/+/planet"], qoss: [.atLeastOnce, .atMostOnce, .exactlyOnce])
 
 while config.status == ConnectionStatus.connected {
     sleep(60)
