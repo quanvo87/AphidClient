@@ -1,9 +1,9 @@
+# 🚫 This project is no longer maintained.
+
 [![Build Status](https://travis-ci.org/IBM-Swift/AphidClient.svg?branch=master)](https://travis-ci.org/IBM-Swift/AphidClient)
 ![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)
 
 # Aphid Client Examples
-
-🚫 This project is no longer maintained.
 
 > This repository holds various sample usage cases for the [Aphid](https://github.com/IBM-Swift/Aphid/) MQTT Driver. Larger more robust project examples will be added here in the future
 
